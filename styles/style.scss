@@ -1,0 +1,17 @@
+@use 'setup';
+@use 'variables';
+@use 'header';
+
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+}
+

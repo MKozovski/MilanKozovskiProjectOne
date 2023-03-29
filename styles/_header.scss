@@ -1,0 +1,55 @@
+.banner {
+    background-image: url(../assets/home.jpg);
+    background-repeat: no-repeat;
+    width: 1900px;
+    height: 80vh;
+}
+
+body {
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1900px;
+
+    img {
+        height: 30px;
+        margin: 0px 60px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style-type: none;
+            margin: 20px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        display: inline-block;
+    }
+    a:hover:after, :focus:after {
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        left: 0;
+        bottom: -5px;
+        background: black;
+        display: block;
+        content: "";
+    }
+
+    
+}
