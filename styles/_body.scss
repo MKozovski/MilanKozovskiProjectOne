@@ -1,0 +1,39 @@
+
+
+.threephotos {
+    display:flex;
+    justify-content: center;
+    max-width: auto;
+    height: auto;
+    margin: 100px 0px;
+    img {
+        height: 100%;
+        max-width: 100%;
+        transition: all 0.8s ease;
+    }
+    .cat1,
+    .cat2,
+    .cat3 {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: 0px 20px;
+        position: relative;
+        img:hover {
+            transform: scale(1.1) translateY(-30px);
+        }
+    }   
+}
+
+.cat1text,
+.cat2text,
+.cat3text {
+    position: absolute;
+    display: inline-block;
+    max-width: 50%;
+    background: white;
+    margin: 0;
+    padding: 0px 10px;
+    bottom: 15px;
+}
+

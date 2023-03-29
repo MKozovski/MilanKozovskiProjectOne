@@ -6,6 +6,8 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -13,4 +15,14 @@ img {
 
 html {
     text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+.wrapper1 {
+    max-width: 2200px;
+    width: 60%;
+    margin: 0 auto;
 }
