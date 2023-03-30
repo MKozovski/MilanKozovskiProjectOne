@@ -6,6 +6,25 @@
     background-size: cover;
     height: 80vh;
     position: relative;
+
+    .banner-text {
+            display: inline-block;
+            position: absolute;
+            text-align: left;
+            height: 400px;
+            width: 300px;
+            top: 200px;
+            left: 300px;
+            color: grey;
+    
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-family: "poppins";
+                font-weight: 500;
+                font-size: 4rem;
+            }
+        }
 }
 
 body {
@@ -39,33 +58,17 @@ nav {
         color: black;
         position: relative;
         display: inline-block;
-    }
-    a:hover:after, :focus:after {
-        position: absolute;
-        height: 3px;
-        width: 60%;
-        left: 0;
-        bottom: -5px;
-        background: black;
-        display: block;
-        content: "";
-    }    
-}
-
-.bannertext {
-    display: inline-block;
-    position: absolute;
-    text-align: left;
-    height: 400px;
-    width: 300px;
-    top: 200px;
-    left: 300px;
-    color: #333;
-    h1 {
-            margin: 0;
-            padding: 0;
-            font-family: "poppins";
-            font-weight: 500;
-            font-size: 4rem;
+            &:hover:after,
+            &:focus:after {
+                position: absolute;
+                height: 3px;
+                width: 60%;
+                left: 0;
+                bottom: -5px;
+                background: black;
+                display: block;
+                content: "";
+            }   
         }
 }
+

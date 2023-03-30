@@ -245,12 +245,35 @@ body {
   margin: 0 auto;
 }
 
+.wrapper2 {
+  max-width: 2200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .banner {
   background-image: url(../assets/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   position: relative;
+}
+.banner .banner-text {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  height: 400px;
+  width: 300px;
+  top: 200px;
+  left: 300px;
+  color: grey;
+}
+.banner .banner-text h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 4rem;
 }
 
 body {
@@ -291,7 +314,7 @@ nav a {
   position: relative;
   display: inline-block;
 }
-nav a:hover:after, nav :focus:after {
+nav a:hover:after, nav a:focus:after {
   position: absolute;
   height: 3px;
   width: 60%;
@@ -302,24 +325,6 @@ nav a:hover:after, nav :focus:after {
   content: "";
 }
 
-.bannertext {
-  display: inline-block;
-  position: absolute;
-  text-align: left;
-  height: 400px;
-  width: 300px;
-  top: 200px;
-  left: 300px;
-  color: #333;
-}
-.bannertext h1 {
-  margin: 0;
-  padding: 0;
-  font-family: "poppins";
-  font-weight: 500;
-  font-size: 4rem;
-}
-
 .threephotos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,6 +332,7 @@ nav a:hover:after, nav :focus:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   max-width: auto;
   height: auto;
   margin: 100px 0px;
@@ -334,12 +340,8 @@ nav a:hover:after, nav :focus:after {
 .threephotos img {
   height: 100%;
   max-width: 100%;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
 }
-.threephotos .cat1,
-.threephotos .cat2,
-.threephotos .cat3 {
+.threephotos .catpic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,24 +352,89 @@ nav a:hover:after, nav :focus:after {
   width: 500px;
   margin: 0px 20px;
   position: relative;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
-.threephotos .cat1 img:hover,
-.threephotos .cat2 img:hover,
-.threephotos .cat3 img:hover {
+.threephotos .catpic:hover {
   -webkit-transform: scale(1.1) translateY(-30px);
           transform: scale(1.1) translateY(-30px);
 }
 
-.cat1text,
-.cat2text,
-.cat3text {
+.cattext {
   position: absolute;
   display: inline-block;
-  max-width: 50%;
+  width: 100%;
+  max-width: 120px;
   background: white;
   margin: 0;
   padding: 0px 10px;
   bottom: 15px;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery img {
+  height: 100%;
+  width: 100%;
+}
+.gallery .gallery-pic {
+  width: 18%;
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .gallery-pic .gallery-txt {
+  padding-left: 20px;
+}
+.gallery button {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gallery-head {
+  text-align: center;
+}
+.gallery-head h2 {
+  display: inline-block;
+}
+.gallery-head h2:after {
+  position: relative;
+  height: 3px;
+  width: 30%;
+  left: 60px;
+  bottom: -5px;
+  background: black;
+  display: block;
+  content: "";
+}
+
+.gallery1 h3 {
+  display: inline-block;
+  width: 100%;
+  max-width: 60px;
+  background: #eba6aa;
+}
+
+.gallery3 h3 {
+  display: inline-block;
+  width: 100%;
+  max-width: 60px;
+  background: #88cce2;
 }
 
 footer {

@@ -3,37 +3,93 @@
 .threephotos {
     display:flex;
     justify-content: center;
+    width: 100%;
     max-width: auto;
     height: auto;
     margin: 100px 0px;
     img {
         height: 100%;
         max-width: 100%;
-        transition: all 0.8s ease;
     }
-    .cat1,
-    .cat2,
-    .cat3 {
+    .catpic {
         display: flex;
         flex-direction: column;
         width: 500px;
         margin: 0px 20px;
         position: relative;
-        img:hover {
-            transform: scale(1.1) translateY(-30px);
-        }
+        transition: all 0.8s ease;
+            &:hover {
+                transform: scale(1.1) translateY(-30px);
+            }
     }   
 }
 
-.cat1text,
-.cat2text,
-.cat3text {
+.cattext{
     position: absolute;
     display: inline-block;
-    max-width: 50%;
+    width: 100%;
+    max-width: 120px;
     background: white;
     margin: 0;
     padding: 0px 10px;
     bottom: 15px;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery-pic {
+        width: 18%;
+        border: 1px solid rgba(220, 220, 220, .5);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .gallery-txt {
+            padding-left: 20px;
+            }
+    }
+    button {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.gallery-head {
+    text-align: center;
+    h2 {
+        display: inline-block;
+            &:after {
+                position: relative;
+                height: 3px;
+                width: 30%;
+                left: 60px;
+                bottom: -5px;
+                background: black;
+                display: block;
+                content: "";
+                }
+    }
+}
+
+.gallery1 h3 {
+    display: inline-block;
+    width: 100%;
+    max-width: 60px;
+    background: #eba6aa;
+}
+
+.gallery3 h3 {
+    display: inline-block;
+    width: 100%;
+    max-width: 60px;
+    background: #88cce2;
+}
