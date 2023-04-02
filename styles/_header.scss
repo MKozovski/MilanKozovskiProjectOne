@@ -1,3 +1,5 @@
+@use './variables' as v;
+@use './mixins' as m;
 
 
 .banner {
@@ -15,16 +17,13 @@
             text-align: left;
             height: 400px;
             width: 300px;
-            color: grey;
-            margin-left: 100px;
-            margin-bottom: 50px;
+            color: v.$secondaryColor;
     
             h1 {
                 margin: 0;
                 padding: 0;
-                font-family: "poppins";
-                font-weight: 500;
                 font-size: 4rem;
+                @include m.font-type($sizeValue: 500);
             }
         }
 }

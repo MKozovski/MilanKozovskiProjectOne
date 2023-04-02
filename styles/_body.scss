@@ -1,20 +1,21 @@
-
+@use './variables' as v;
+@use './mixins' as m;
 
 .threephotos {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: auto;
-    height: auto;
+    height: 100%;
     margin: 100px 0px;
     img {
         height: 100%;
-        max-width: 100%;
+        width: 100%;
     }
     .catpic {
         display: flex;
         flex-direction: column;
-        width: 500px;
+        width: 33%;
         margin: 0px 20px;
         position: relative;
         transition: all 0.8s ease;
@@ -116,13 +117,13 @@
 
 .section2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     margin: 50px auto;
     position: relative;
 
     img {
-        height: 500px;
+        height: 700px;
         margin: 0;
         width: 100%;
     }
@@ -143,27 +144,33 @@
         .section2-text1 {
             position: absolute;
             text-align: center;
-            bottom: 10px;
+            bottom: 50px;
             left: 0px;
             right: 0px;
             display: inline-block;
             color: white;
-
+             p span {
+                font-size: 4rem;
+                @include m.font-type($sizeValue: 700);
+             }
         }
 
         .section2-text2 {
             position: absolute;
             text-align: center;
-            top: 60px;
-            left: 150px;
-            right: 150px;
+            top: 80px;
+            left: 200px;
+            right: 200px;
             display: inline-block;
             width: 50%;
             color: white;
             border: 1px white solid;
+            font-size: 1.9rem;
+            @include m.font-type($sizeValue: 500);
 
             span {
-                font-size: 2rem;
+                font-size: 3.2rem;
+                @include m.font-type($sizeValue: 700);
             }
 
         }
@@ -174,6 +181,13 @@
 .section3{
     .section3-text {
         text-align: center;
+        p {
+            color: v.$tertiaryColor;
+        }
+        h3 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
     }
     .gallery2 {
         display: flex;

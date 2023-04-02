@@ -1,9 +1,16 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 
 footer {
-    background-color: #333;
+    background-color: v.$secondaryColor;
     display: flex;
     text-align: left;
-    color: white;
+    color: v.$primaryColor;
+
+    h4 {
+        margin: 0;
+    }
 
     ul {
         list-style-type: none;

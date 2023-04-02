@@ -9,12 +9,6 @@ h1 {
     font-size: 4rem;
 }
 
-.wrapper3 {
-    max-width: 2200px;
-    width: 55%;
-    margin: 0 auto;
-}
-
 
 nav {
     display: flex;
@@ -88,7 +82,7 @@ nav {
             border: 0;
             outline: 0;
             background: transparent;
-            border-bottom: 1px solid v.$tertiaryColor;
+            border-bottom: 1.5px solid v.$tertiaryColor;
             color: v.$tertiaryColor;
             padding: 10px 0px;
             margin: 0 auto 30px;
