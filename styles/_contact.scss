@@ -1,3 +1,13 @@
+@use './variables' as v;
+@use './mixins' as m;
+ 
+body h1 {
+    @include m.font-type($sizeValue: 500);
+}
+
+h1 {
+    font-size: 4rem;
+}
 
 .wrapper3 {
     max-width: 2200px;
@@ -28,13 +38,13 @@ nav {
     }
     a {
         text-decoration: none;
-        color: black;
+        color: v.$secondaryColor;
         position: relative;
         display: inline-block;
             &:hover:after,
             &:focus:after {
                 position: absolute;
-                height: 3px;
+                height: 2px;
                 width: 60%;
                 left: 0;
                 bottom: -5px;
@@ -49,12 +59,14 @@ nav {
     background-image: url(../assets/contact-us.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 360px;
-    max-width: 100%;
+    height: 444px;
+    min-height: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: v.$secondaryColor;
 }
 
 .contact-main {
@@ -65,6 +77,7 @@ nav {
     margin-top: 50px;
     display:inline-block;
     width: 400px;
+    
     ul {
         list-style-type: none;
         margin: 0;
@@ -75,37 +88,36 @@ nav {
             border: 0;
             outline: 0;
             background: transparent;
-            border-bottom: 1px solid #666;
-            color: #666;
-            padding: 5px 0px;
+            border-bottom: 1px solid v.$tertiaryColor;
+            color: v.$tertiaryColor;
+            padding: 10px 0px;
             margin: 0 auto 30px;
             width: 100%;
+            @include m.font-type($sizeValue: 500);
     }
-    .textarea {
+    li textarea {
+  
         margin: 0;
-        padding: 0;
+        padding-bottom: 30px;
+        padding-top: 0;
+       
     }
 
     button {
         all: unset;
-        border: solid black 1px;
-        margin: 20px 0;
-        padding: 15px 25px;
+        border: solid v.$secondaryColor 1px;
+        margin: 30px 0;
+        padding: 15px 35px;
     }
 }
 
 
-
 footer {
-    background-color: #333;
+    background-color: v.$secondaryColor;
     display: flex;
     text-align: left;
-    color: white;
-    height: 400px;
-    // position: fixed;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
+    color: v.$primaryColor;
+    height: 295px;
 
     .contactfooter {
             display: flex;
@@ -113,6 +125,10 @@ footer {
             align-items: center;
             align-content: center;
         }
+
+    h4 {
+        margin: 0;
+    }    
 
     ul {
         list-style-type: none;
@@ -128,9 +144,10 @@ footer {
     .footerbox {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0 10px;
         display: inline-block;
         height: 80%;
+        position: relative;
 
         img {
             margin-right: 5px;
@@ -145,32 +162,36 @@ footer {
     .footerbig {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         margin-top: 50px;
         width: 100%;
     }
-}
-
-.footer1 {
-    p {
-        padding-right: 12px;
+    .footer4 input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid v.$primaryColor;
+        color: v.$tertiaryColor;
+        padding: 5px 0px;
+        margin: 10px auto 30px;
+        width: 100%;
     }
 
-    ul {
-        display: flex;
-
-        li {
-            margin-right: 10px;
+    .footer1 {
+        p {
+            padding-right: 12px;
         }
+
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 10px;
+            }
+        }
+
     }
 }
 
-.footer4 input {
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid white;
-    color: #666;
-    padding: 5px 0px;
-    margin: 10px auto 30px;
-    width: 100%;
-}
+
+

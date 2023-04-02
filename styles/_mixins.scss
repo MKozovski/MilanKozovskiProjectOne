@@ -1,0 +1,4 @@
+@mixin font-type($sizeValue) {
+    font-weight: $sizeValue;
+    font-family: "poppins";
+}
