@@ -1,10 +1,62 @@
-@use './variables' as v;
 
 footer {
     background-color: #333;
+    display: flex;
+    text-align: left;
+    color: white;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 5px;
+
+        img {
+            height: 12px;
+            width: 12px;
+        }
+    }
+
+    .footerbox {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        height: 80%;
+
+        img {
+            margin-right: 5px;
+        }
+
+        .footer2 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .footerbig {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+    }
 }
 
-footer img {
-    height: 20px;
-    width: 20px;
+.footer1 {
+    ul {
+        display: flex;
+        li {
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer4 input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: #666;
+    padding: 5px 0px;
+    margin: 10px auto 30px;
+    width: 100%;
 }
