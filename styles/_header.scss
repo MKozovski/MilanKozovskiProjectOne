@@ -71,5 +71,11 @@ nav {
                 content: "";
             }   
         }
+    .hamburger {
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        display: none;
+    }
 }
 

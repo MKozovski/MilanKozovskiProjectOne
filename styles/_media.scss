@@ -3,10 +3,38 @@
 
 
 
+@media (min-width:2125px) {
+    .banner {
+            background-size: cover;
+            height: 1200px;
+            width: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: v.$secondaryColor;
+    
+        }
+                .section2 .section2-photo .section2-text2 {
+                    position: absolute;
+                    text-align: center;
+                    top: 80px;
+                    left: 283px;
+                    right: 200px;
+                    display: inline-block;
+                    width: 50%;
+                    color: white;
+                    border: 1px white solid;
+                    font-size: 1.9rem;
+                    font-weight: 500;
+                    font-family: "poppins";
+                }
+}
+
 @media (max-width: 1600px) {
-    .bannercover {
+    .banner {
         background-size: cover;
-        height: 250px;
+        height: 750px;
         width: 1600px;
         position: relative;
         display: flex;
@@ -18,20 +46,16 @@
     .banner.textcover {
         align-self: flex-start;
     }
-    footer {
-        position: absolute;
-        bottom: 0;
+    .footer-big {
         width: 100%;
         height: 20%;
     }
-
-
 }
 
 @media (max-width: 1200px) {
-    .bannercover {
+    .banner {
         background-size: cover;
-        height: 200px;
+        height: 600px;
         width: 1200px;
         position: relative;
         display: flex;
@@ -44,24 +68,81 @@
         font-size: 2.5rem;
     }
 
-    .banner.textcover {
+    .banner-text {
         align-self: flex-start;
-        
-
+        height: 100%;
     }
 
-    .contact-main {
-        text-align: center;
+    .threephotos {
+        margin: 25px;
+        width: auto;
+        height: auto;
+
+            .cattext {
+                font-size: .9rem;
+                width: 100px;
+                height: 45px
+            }
     }
 
-    .contact-list {
-        font-size: .5rem;
-        height: 100px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .gallery1 h3 {
+        display: inline-block;
+        width: 100%;
+        max-width: 60px;
+        background: #eba6aa;
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
+    .gallery3 h3 {
+        display: inline-block;
+        width: 100%;
+        max-width: 60px;
+        background: #88cce2;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery-pic {
+        width: 16%;
+
+        .gallery-txt {
+            padding-left: 15px;
+            font-size: .9rem;
+
+            img {
+                height: 20px;
+                width: 20px;
+                margin: 10px;
+                align-self: flex-start;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.section2 .section2-photo .section2-text2 {
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    left: 141px;
+    right: 200px;
+    display: inline-block;
+    width: 50%;
+    color: white;
+    border: 1px white solid;
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+    .footerbig {
         width: 100%;
         height: 20%;
         margin-top: 20px;
@@ -70,31 +151,116 @@
                         margin-top: 20px;
                         height: 100%;
                     }
-    }
+        }
 }
 
+
 @media (max-width: 900px) {
-    .bannercover {
+
+    .banner {
         background-size: cover;
-        height: 140px;
+        height: 500px;
         width: 900px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         color: v.$secondaryColor;
+        font-size: 1rem;
+
+            .banner-text {
+                display: inline-block;
+                text-align: left;
+                height: 100%;
+                width: 300px;
+                color: v.$secondaryColor;
+
+                h1 {
+                    font-size: 2rem;
+            }
+        }
 
     }
 
-    .banner.textcover {
-        align-self: flex-start;
+    .threephotos {
+    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 600px;
+
+        img {
+            padding: 0x;
+            width: 100%;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .cattext {
+            font-size: .8rem;
+            width: 100px;
+            height: 40px
+        }
+    }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        
+
+            .gallery-pic {
+                width: 25%;
+                height: 255px;
+            
+                .gallery-txt {
+                    padding: 0 auto;
+                    font-size: .6rem;
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        img {
+                            height: 30px;
+                            width: 30px;
+                            margin: 20px;
+                            align-self: flex-start;
+                        }
+                }
+            }
+        }  
+
+.section2 .section2-photo .section2-text2 {
+    top: 65px;
+    left: 164px;
+    right: 200px;
+    width: 50%;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+        
+    .section2 {
+    display: flex;
+    flex-direction: column;
+    }  
+
+    .gallery2 {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
+    .section3 .gallery2 img {
+        height: 100%;
+        width: 30%;
+        margin: 10px;
+    }
+
+    .footerbig {
         width: 100%;
         height: 30%;
+        margin: 10px;
+        padding: 10px;
 
         .footerbig {
             margin-top: 20px;
@@ -104,16 +270,13 @@
                 display: none;
             }
     }
-    h1 {
-        font-size: 2rem;
-    }
     
 }
 
 @media (max-width: 650px) {
-    .bannercover {
+    .banner {
         background-size: cover;
-        height: 100%;
+        height: 350px;
         width: 650px;
         position: relative;
         display: flex;
@@ -121,15 +284,85 @@
         align-items: center;
         color: v.$secondaryColor;
 
+            .banner-text {
+                display: inline-block;
+                text-align: left;
+                height: 100%;
+                width: 300px;
+                color: v.$secondaryColor;
+
+                p {
+                    font-size: .8rem;
+                }
+
+                h1 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1rem;
+                }
+            }
     }
 
-    .banner.textcover {
-        align-self: flex-start;
+    .threephotos {
+        justify-content: center;
+        height: 566px;
+
+        img {
+                padding: 0;
+                width: 100%;
+                height: 240px;
+                margin: 0;
+            }
+
+        .cattext{
+            display: none;
+        }
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .gallery-pic {
+            width: 33%;
+            height: 255px;
+
+            .gallery-txt {
+                padding: 0 auto;
+                font-size: .6rem;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin: 20px;
+                    align-self: flex-start;
+                }
+            }
+        }
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
+    .section2 .section2-photo .section2-text2 {
+       
+        top: 87px;
+        left: 118px;
+        right: 200px;
+        width: 50%;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+    }
+
+    .section3 .gallery2 img {
+        height: 100%;
+        width: 40%;
+        margin: 10px;
+    }
+
+    .footerbig {
         width: 100%;
         height: 30%;
 
@@ -174,7 +407,7 @@
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     nav {
@@ -190,21 +423,21 @@
             top: 43px;
         }
 
-        // span {
-        //     display: none;
-        // }
-        // ul {
-        //     display: none;
-        // }
+        span {
+            display: none;
+        }
+        ul {
+            display: none;
+        }
 
 }
 
 
 
 @media (max-width: 480px) {
-    .bannercover {
-        background-size: contain;
-        height: 100%;
+    .banner {
+        background-size: cover;
+        height: 250px;
         width: 480px;
         position: relative;
         display: flex;
@@ -212,12 +445,74 @@
         align-items: center;
         color: v.$secondaryColor;
 
+            .banner-text {
+                display: inline-block;
+                text-align: left;
+                height: 100%;
+                width: 300px;
+                color: v.$secondaryColor;
+
+                p {
+                    display: none;
+                }
+
+                h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.2rem;
+
+                }
+            }
     }
-    .contact-list {
-        width: 300px;
+
+    .cat1 img, .cat2 img {
+        display: none;
     }
-    footer {
-        height: 25%;
+
+    .threephotos {
+        height: 600px;
+        width: 900px;
+        padding: 10px;
+        position: relative;
+        img {
+            position: absolute;
+                padding: 0x;
+                width: 500px;
+                height: 500px;
+                margin: 10px;
+                bottom: -150px;
+                left: -320px;
+            }
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .gallery-pic {
+            width: 40%;
+            height: 255px;
+
+            .gallery-txt {
+                padding: 0 auto;
+                font-size: .6rem;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin: 20px;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+
+
         ul {
             display: flex;
             flex-direction: column;
@@ -228,9 +523,24 @@
         }
     }
 
+    .section2 .section2-photo .section2-text2 {
+        left: 84px;
+        right: 200px;
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .section2 img {
+        height: 400px;
+    }
+
+    .section3 .gallery2 img {
+        height: 100%;
+        width: 40%;
+        margin: 10px;
+    }
+
     .footer1 {
-        display: none;
-        position: absolute;
         margin: 0;
         padding: 0;
 
@@ -243,15 +553,14 @@
     }
 
     .footerbig {
-        position: absolute;
         right: 50px;
     }
 }
 
 @media (max-width: 360px) {
-    .bannercover {
+    .banner {
         background-size: cover;
-        height: 100%;
+        height: 180px;
         width: 360px;
         position: relative;
         display: flex;
@@ -259,23 +568,97 @@
         align-items: center;
         color: v.$secondaryColor;
 
-        h1 {
-            font-size: 1.3rem;
+            .banner-text {
+                display: inline-block;
+                text-align: left;
+                height: 100%;
+                width: 300px;
+                color: v.$secondaryColor;
+
+                    h1 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1rem;
+
+                    }
+            }
+    }
+
+    .threephotos {
+        height: 400px;
+        width: 650px;
+        padding: 10px;
+        position: relative;
+
+        img {
+            position: absolute;
+            padding: 0x;
+            width: 300px;
+            height: 300px;
+            margin: 15px;
+            bottom: -75px;
+            left: -240px;
         }
     }
 
-    .contact-list {
-        width: 150px;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
+
+
+        .gallery-pic {
+            width: 40%;
+            height: 225px;
+
+            .gallery-txt {
+                padding: 0 auto;
+                font-size: .6rem;
+
+                p {
+                    display: none;
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin: 20px;
+                    align-self: flex-start;
+                }
+            }
+        }
     }
 
-    footer  {
+    .section2 .section2-photo .section2-text2 {
+
+        top: 77px;
+        left: 40px;
+        right: 200px;
+        width: 69%;
+    }
+
+    .section2-photo img {
+        height: 550px;
+    }
+        
+    
+.section2 img {
+    height: 340px;
+}
+
+    .section3 .gallery2 img {
+        height: 100%;
+        width: 80%;
+        margin: 10px;
+    }
+
+    .footerbig  {
         height: 25%;
         font-size: .8rem;
 
         p {
-        display: none; 
-    }
+            display: none; 
+        }
     }
 
-}
 }
