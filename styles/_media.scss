@@ -1,0 +1,231 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+@media (max-width: 1600px) {
+    .bannercover {
+        background-size: cover;
+        height: 250px;
+        width: 1600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+    }
+    .banner.textcover {
+        align-self: flex-start;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .bannercover {
+        background-size: cover;
+        height: 200px;
+        width: 1200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner.textcover {
+        align-self: flex-start;
+        
+
+    }
+
+    .contact-main {
+        text-align: center;
+    }
+
+    .contact-list {
+        font-size: .5rem;
+        height: 100px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        margin-top: 20px;
+
+                .footerbig {
+                        margin-top: 20px;
+                        height: 100%;
+                    }
+    }
+}
+
+@media (max-width: 900px) {
+    .bannercover {
+        background-size: cover;
+        height: 140px;
+        width: 900px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+    }
+
+    .banner.textcover {
+        align-self: flex-start;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+
+        .footerbig {
+            margin-top: 20px;
+        }
+
+        p {
+                display: none;
+            }
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .bannercover {
+        background-size: cover;
+        height: 100%;
+        width: 650px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+    }
+
+    .banner.textcover {
+        align-self: flex-start;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+
+        .footerbig {
+            margin-top: 15px;
+        }
+
+            img {
+                height: 20px;
+                width: 60px;
+                }
+
+        span {
+            display: none;
+        }
+        p {
+                display: none;
+            }
+
+    .footerbox {
+        margin: 10px;
+            .footerbox1 {
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            height: 15px;
+            width: 60px;
+            margin-bottom: 10px;
+            }
+        }
+    }
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        ul {
+            visibility: hidden;
+        }
+        
+        .hamburger {
+        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        position: absolute;
+        right: -62px;
+        top: 43px;
+        }
+    }
+
+
+@media (max-width: 480px) {
+    .bannercover {
+        background-size: contain;
+        height: 100%;
+        width: 480px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+    }
+    .contact-list {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bannercover {
+        background-size: cover;
+        height: 100%;
+        width: 320px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: v.$secondaryColor;
+
+        h1 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .contact-list {
+        width: 150px;
+    }
+
+    footer  {
+        height: 20%;
+
+        p {
+        display: none; 
+    }
+    }
+}
