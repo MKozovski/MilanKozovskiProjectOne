@@ -208,10 +208,17 @@
             display: flex;
             flex-wrap: wrap;
         
+            img {
+                height: 69%;
+            }
 
             .gallery-pic {
                 width: 25%;
-                height: 255px;
+                height: 355px;
+
+                .gallery2 img {
+                    height: 65%;
+                }
             
                 .gallery-txt {
                     padding: 0 auto;
@@ -252,7 +259,7 @@
 
     .section3 .gallery2 img {
         height: 100%;
-        width: 30%;
+        width: 60%;
         margin: 10px;
     }
 
@@ -322,7 +329,9 @@
         display: flex;
         flex-wrap: wrap;
 
-
+        img {
+            height: 59%;
+        }
         .gallery-pic {
             width: 33%;
             height: 255px;
@@ -488,24 +497,30 @@
     .gallery {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
 
         .gallery-pic {
-            width: 40%;
-            height: 255px;
+            width: 75%;
+            height: 500px;
+            
 
             .gallery-txt {
                 padding: 0 auto;
                 font-size: .6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 p {
                     font-size: 1rem;
                 }
 
                 img {
-                    height: 30px;
-                    width: 30px;
+                    height: 50px;
+                    width: 50px;
                     margin: 20px;
+                    margin-left: 40px;
                     align-self: flex-start;
                 }
             }
@@ -531,7 +546,7 @@
     }
 
     .section2 img {
-        height: 400px;
+        height: 550px;
     }
 
     .section3 .gallery2 img {
@@ -608,15 +623,15 @@
 
 
         .gallery-pic {
-            width: 40%;
-            height: 225px;
+            width: 75%;
+            height: 400px;
 
             .gallery-txt {
                 padding: 0 auto;
                 font-size: .6rem;
 
                 p {
-                    display: none;
+                    font-size: 1rem;
                 }
 
                 img {
