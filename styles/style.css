@@ -873,25 +873,29 @@ footer .footer1 ul li {
     width: 70px;
     margin-bottom: 10px;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  nav {
+    margin: 30px;
+  }
+  nav .hamburger {
+    display: contents;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    position: absolute;
+    right: -62px;
+    top: 43px;
+  }
+  nav span {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
 }
-h1 {
-  font-size: 2rem;
-}
-
-nav ul {
-  visibility: hidden;
-}
-nav .hamburger {
-  display: contents;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 100px;
-  position: absolute;
-  right: -62px;
-  top: 43px;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 650px) and (max-width: 480px) {
   .bannercover {
     background-size: contain;
     height: 100%;
@@ -933,7 +937,7 @@ nav .hamburger {
     right: 50px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 650px) and (max-width: 360px) {
   .bannercover {
     background-size: cover;
     height: 100%;

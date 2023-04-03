@@ -1,6 +1,8 @@
 @use './variables' as v;
 @use './mixins' as m;
 
+
+
 @media (max-width: 1600px) {
     .bannercover {
         background-size: cover;
@@ -105,6 +107,7 @@
     h1 {
         font-size: 2rem;
     }
+    
 }
 
 @media (max-width: 650px) {
@@ -170,27 +173,32 @@
         }
     }
 
-    }
-
     h1 {
         font-size: 2rem;
     }
 
     nav {
-        ul {
-            visibility: hidden;
-        }
-        
+        margin: 30px;
+
         .hamburger {
-        display: contents;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 100px;
-        position: absolute;
-        right: -62px;
-        top: 43px;
+            display: contents;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 100px;
+            position: absolute;
+            right: -62px;
+            top: 43px;
         }
-    }
+
+        // span {
+        //     display: none;
+        // }
+        // ul {
+        //     display: none;
+        // }
+
+}
+
 
 
 @media (max-width: 480px) {
@@ -269,4 +277,5 @@
     }
     }
 
+}
 }
