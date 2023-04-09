@@ -435,10 +435,11 @@
             display: contents;
             display: flex;
             justify-content: flex-end;
-            margin-right: 100px;
             position: absolute;
-            right: -62px;
-            top: 43px;
+        }
+
+        .menu {
+            display: block;
         }
 
         span {
@@ -577,7 +578,8 @@
     }
 
     .footerbig {
-        right: 50px;
+        position: relative;
+        right: 80px;
     }
 }
 
@@ -679,6 +681,9 @@
     .footerbig  {
         height: 25%;
         font-size: .8rem;
+        position: relative;
+        right:80px;
+
 
         p {
             display: none; 
