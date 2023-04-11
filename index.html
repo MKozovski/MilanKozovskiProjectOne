@@ -22,7 +22,7 @@
         <nav>
             <img src="assets/logo-black.png" alt="Stylized text that says 'NOVAS'">
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul> 
@@ -257,21 +257,23 @@
 
         // Combine show menu + button toggle and vice versa
 
+        
         function toggleMenu() {
-        if (menu.classList.contains("showMenu")) {
-            menu.classList.remove("showMenu");
-            hamburgerClosed.style.display = "none";
-            hamburgerOpen.style.display = "block";
-        } else {
-            menu.classList.add("showMenu");
-            hamburgerClosed.style.display = "block";
-            hamburgerOpen.style.display = "none";
-        }
-    }
+            if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                hamburgerClosed.style.display = "none";
+                hamburgerOpen.style.display = "block";
+            } else {
+                menu.classList.add("showMenu");
+                hamburgerClosed.style.display = "block";
+                hamburgerOpen.style.display = "none";
+            }
+    }       
 
         hamburger.addEventListener("click", toggleMenu);
 
         // Image carousel
+        // I am going to try this and probably fail miserably
         </script>
         </body>
 </html>

@@ -340,8 +340,8 @@ nav a:hover:after, nav a:focus:after {
 }
 nav .menu {
   position: fixed;
-  -webkit-transform: translatex(100%);
-          transform: translatex(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -352,10 +352,8 @@ nav .menu {
   z-index: 99;
   background: black;
   border: grey 2px solid;
-  color: white;
   list-style: none;
   padding: 1rem;
-  color: white;
 }
 nav .menu .menuItem {
   color: white;
@@ -558,8 +556,8 @@ nav .hamburger .fa-regular {
   position: absolute;
   text-align: center;
   bottom: 50px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   display: inline-block;
   color: white;
 }
@@ -572,10 +570,9 @@ nav .hamburger .fa-regular {
   position: absolute;
   text-align: center;
   top: 80px;
-  left: 200px;
-  right: 200px;
+  left: 33%;
+  width: 300px;
   display: inline-block;
-  width: 50%;
   color: white;
   border: 1px white solid;
   font-size: 1.9rem;
@@ -898,20 +895,6 @@ nav .contact-hamburger {
             align-items: center;
     color: #333;
   }
-  .section2 .section2-photo .section2-text2 {
-    position: absolute;
-    text-align: center;
-    top: 80px;
-    left: 283px;
-    right: 200px;
-    display: inline-block;
-    width: 50%;
-    color: white;
-    border: 1px white solid;
-    font-size: 1.9rem;
-    font-weight: 500;
-    font-family: "poppins";
-  }
 }
 @media (max-width: 1600px) {
   .banner {
@@ -1015,20 +998,6 @@ nav .contact-hamburger {
         align-self: flex-start;
     padding: 0;
   }
-  .section2 .section2-photo .section2-text2 {
-    position: absolute;
-    text-align: center;
-    top: 80px;
-    left: 141px;
-    right: 200px;
-    display: inline-block;
-    width: 50%;
-    color: white;
-    border: 1px white solid;
-    font-size: 1.9rem;
-    font-weight: 500;
-    font-family: "poppins";
-  }
   .footerbig {
     width: 100%;
     height: 20%;
@@ -1124,14 +1093,6 @@ nav .contact-hamburger {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .section2 .section2-photo .section2-text2 {
-    top: 65px;
-    left: 164px;
-    right: 200px;
-    width: 50%;
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
   .section2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1175,7 +1136,22 @@ nav .contact-hamburger {
   }
 }
 @media (max-width: 650px) {
-  .banner {
+  nav {
+    margin: 30px;
+  }
+  nav .hamburger .fa-solid {
+    display: block;
+  }
+  nav .menu {
+    display: block;
+  }
+  nav span {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .banner {
     background-size: cover;
     height: 350px;
     width: 650px;
@@ -1191,88 +1167,81 @@ nav .contact-hamburger {
             align-items: center;
     color: #333;
   }
-  .banner .banner-text {
+  nav .banner .banner-text {
     display: inline-block;
     text-align: left;
     height: 100%;
     width: 300px;
     color: #333;
   }
-  .banner .banner-text p {
+  nav .banner .banner-text p {
     font-size: 0.8rem;
   }
-  .banner .banner-text h1 {
+  nav .banner .banner-text h1 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
   }
-  .threephotos {
+  nav .threephotos {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 566px;
   }
-  .threephotos img {
+  nav .threephotos img {
     padding: 0;
     width: 100%;
     height: 240px;
     margin: 0;
   }
-  .threephotos .cattext {
+  nav .threephotos .cattext {
     display: none;
   }
-  .gallery {
+  nav .gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gallery img {
+  nav .gallery img {
     height: 45%;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
   }
-  .gallery .gallery-pic {
+  nav .gallery .gallery-pic {
     width: 33%;
     height: 255px;
   }
-  .gallery .gallery-pic .gallery-txt {
+  nav .gallery .gallery-pic .gallery-txt {
     padding: 0 auto;
     font-size: 0.6rem;
   }
-  .gallery .gallery-pic .gallery-txt p {
+  nav .gallery .gallery-pic .gallery-txt p {
     font-size: 1rem;
   }
-  .gallery .gallery-pic .gallery-txt img {
+  nav .gallery .gallery-pic .gallery-txt img {
     height: 30px;
     width: 30px;
     margin: 20px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .section2 .section2-photo .section2-text2 {
-    top: 87px;
-    left: 118px;
-    right: 200px;
-    width: 50%;
+  nav .section2-text2 {
     font-size: 1.2rem;
-    font-weight: 500;
   }
-  .section3 .gallery2 img {
+  nav .section3 .gallery2 img {
     height: 100%;
     width: 40%;
     margin: 10px;
   }
-  .footerbig {
+  nav .footerbig {
     width: 100%;
     height: 30%;
+    margin: 15px;
   }
-  .footerbig .footerbig {
-    margin-top: 15px;
-  }
-  .footerbig ul {
+  nav .footerbig ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1281,53 +1250,28 @@ nav .contact-hamburger {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footerbig span {
+  nav .footerbig span, nav .footerbig p {
     display: none;
   }
-  .footerbig p {
-    display: none;
-  }
-  .footerbig .footerbox {
+  nav .footerbig .footerbox {
     margin: 10px;
     padding: 10px;
   }
-  .footerbig .footerbox .footerbox1 {
+  nav .footerbig .footerbox .footerbox1 {
     height: 100%;
     width: 100%;
     margin: 0;
   }
-  .footerbig .footerbox .footerbox1 .footer1 li {
+  nav .footerbig .footerbox .footerbox1 .footer1 li {
     display: inline-block;
   }
-  .footerbig .footerbox img {
+  nav .footerbig .footerbox img {
     height: 25px;
     width: 70px;
     margin-bottom: 10px;
   }
-  h1 {
+  nav h1 {
     font-size: 1rem;
-  }
-  nav {
-    margin: 30px;
-  }
-  nav .hamburger {
-    display: contents;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    position: absolute;
-  }
-  nav .menu {
-    display: block;
-  }
-  nav span {
-    display: none;
-  }
-  nav ul {
-    display: none;
   }
 }
 @media (max-width: 650px) and (max-width: 480px) {
@@ -1431,12 +1375,12 @@ nav .contact-hamburger {
     margin: 0;
     padding: 0;
   }
+  .footerbox span {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   .section2 .section2-photo .section2-text2 {
-    left: 84px;
-    right: 200px;
-    width: 50%;
     font-size: 0.8rem;
   }
 }
@@ -1467,7 +1411,7 @@ nav .contact-hamburger {
 @media (max-width: 650px) {
   .footerbig {
     position: relative;
-    right: 80px;
+    right: 40px;
   }
 }
 @media (max-width: 360px) {
@@ -1540,12 +1484,6 @@ nav .contact-hamburger {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .section2 .section2-photo .section2-text2 {
-    top: 77px;
-    left: 40px;
-    right: 200px;
-    width: 69%;
-  }
   .section2-photo img {
     height: 550px;
   }
@@ -1564,6 +1502,11 @@ nav .contact-hamburger {
     right: 80px;
   }
   .footerbig p {
+    display: none;
+  }
+}
+@media (min-width: 650px) {
+  .hamburger {
     display: none;
   }
 }

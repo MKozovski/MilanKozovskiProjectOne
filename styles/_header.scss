@@ -74,7 +74,7 @@ nav {
 
     .menu {
         position: fixed;
-        transform: translatex(100%);
+        transform: translateX(100%);
         transition: transform 0.5s;
         top: 0;
         left: 0;
@@ -82,12 +82,8 @@ nav {
         z-index: 99;
         background: black;
         border: grey 2px solid;
-        color: white;
         list-style: none;
         padding: 1rem;
-        color: white;
-
-
         .menuItem {
             color: white;
             font-size: 2rem;
