@@ -26,9 +26,15 @@
                 <li><a href="./contact.html">CONTACT US</a></li>
             </ul> 
             <span><img src= "assets/icons/shopping-cart-black-icon.png" alt="icon of shopping cart"></span>
-            <div class="contact-hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <ul class="menu">
+                <li><a class="menuItem" href="#">Home</a></li>
+                <li><a class="menuItem" href="#">Blog</a></li>
+                <li><a class="menuItem" href="./contact.html">Contact Us</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fa-solid fa-bars fa-2x"></i>
+                <i class="fa-regular fa-rectangle-xmark fa-2x"></i>
+            </button>
         </nav>
     </header>
     <section class="contact-bannercover">
@@ -90,5 +96,34 @@
                 </div>
             </div>
         </footer>
+            <script>
+
+                // added menu/classes/icons for hamburger open/close button and also menu items in html/css
+                // also added toggle class for menu display/hidden
+                // Assign all grouped elements to variables to be able to manipulate? I think?
+
+                const menu = document.querySelector(".menu");
+                const menuItems = document.querySelectorAll(".menuItem");
+                const hamburger = document.querySelector(".hamburger");
+                const hamburgerOpen = document.querySelector(".fa-solid")
+                const hamburgerClosed = document.querySelector(".fa-regular");
+
+                // Combine show menu + button toggle and vice versa
+
+
+                function toggleMenu() {
+                    if (menu.classList.contains("showMenu")) {
+                        menu.classList.remove("showMenu");
+                        hamburgerClosed.style.display = "none";
+                        hamburgerOpen.style.display = "block";
+                    } else {
+                        menu.classList.add("showMenu");
+                        hamburgerClosed.style.display = "block";
+                        hamburgerOpen.style.display = "none";
+                    }
+                }
+
+                hamburger.addEventListener("click", toggleMenu);
+            </script>
 </body>
 </html>
